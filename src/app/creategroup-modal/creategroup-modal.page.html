@@ -1,0 +1,34 @@
+<ion-content>
+  <div style="height: 25vh; background: url('../../assets/shapes.svg') no-repeat center;background-size: cover;" id="top-header">
+  </div>
+  <div id="main">
+    <h1 style="font-weight: bolder;" text-center>CREATE GROUP</h1>
+    <ion-card-subtitle text-center padding>CLOSED GROUPS TO ADD FRIENDS, SHARE IMAGES AND CHAT</ion-card-subtitle>
+    <div style="margin-top: 1vh;" id="form" padding>
+      <ion-list>
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input required="true" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input required="true" type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input required="true" type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Group Name</ion-label>
+          <ion-input required="true" type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+<div id="buttons" padding>
+  <ion-button color="medium" style="background: url('../../assets/shapes.svg') no-repeat center;background-size: cover;" mode="ios" expand="full"> <ion-ripple-effect></ion-ripple-effect> CREATE</ion-button>
+  <ion-button mode="ios" fill="clear" expand="full" (click)="closeModal()">Cancel</ion-button>
+</div>
+</ion-content>
