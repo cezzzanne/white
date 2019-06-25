@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ModalController} from '@ionic/angular';
+import {ModalController, NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-creategroup-modal',
@@ -8,13 +8,19 @@ import {ModalController} from '@ionic/angular';
 })
 export class CreategroupModalPage implements OnInit {
 
-  constructor(private modalController: ModalController) { }
+  constructor(private modalController: ModalController, private nav: NavController) { }
 
   ngOnInit() {
   }
 
   closeModal() {
     this.modalController.dismiss();
+  }
+
+  async addGroup() {
+    console.log('here');
+    this.modalController.dismiss();
+    this.nav.navigateRoot('/main-menu');
   }
 
 }

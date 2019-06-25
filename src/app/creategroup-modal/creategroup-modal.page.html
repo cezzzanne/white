@@ -28,7 +28,7 @@
     </div>
   </div>
 <div id="buttons" padding>
-  <ion-button color="medium" style="background: url('../../assets/shapes.svg') no-repeat center;background-size: cover;" mode="ios" expand="full"> <ion-ripple-effect></ion-ripple-effect> CREATE</ion-button>
+  <ion-button (click)="addGroup()" color="medium" style="background: url('../../assets/shapes.svg') no-repeat center;background-size: cover;" mode="ios" expand="full"> <ion-ripple-effect></ion-ripple-effect> CREATE</ion-button>
   <ion-button mode="ios" fill="clear" expand="full" (click)="closeModal()">Cancel</ion-button>
 </div>
 </ion-content>
