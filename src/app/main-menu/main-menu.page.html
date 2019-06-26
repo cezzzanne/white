@@ -2,7 +2,7 @@
   <ion-menu mode="ios" contentId="content">
     <ion-header mode="ios">
     <ion-toolbar mode="ios">
-      <ion-title mode="ios">Menu</ion-title>
+      <ion-title mode="ios"></ion-title>
     </ion-toolbar>
     </ion-header>
 
@@ -10,15 +10,15 @@
   <ion-content>
     <ion-list mode="ios">
       <ion-menu-toggle mode="ios" auto-hide="false">
-        <ion-item detail="false" mode="ios" routerLink="/main-menu/pages/main" routerDirection="root" [class.active-item]="selectedPath === '/main-menu/pages/main'">
-          <ion-icon mode="ios" slot="start" name="analytics"></ion-icon>
+        <ion-item detail="false" mode="ios" routerLink="/main-menu/pages/main" routerDirection="root">
+          <ion-icon color="primary" mode="ios" slot="start" name="analytics"></ion-icon>
           Groups
         </ion-item>
       </ion-menu-toggle>
       <ion-menu-toggle mode="ios" auto-hide="false">
-        <ion-item detail="false" mode="ios" routerLink='/main-menu/pages/profile' routerDirection="root" [class.active-item]="selectedPath === '/main-menu/pages/profile'">
-          <ion-icon mode="ios" slot="start" name="contact"></ion-icon>
-          Profile
+        <ion-item detail="false" mode="ios" routerLink='/main-menu/pages/profile' routerDirection="root" >
+          <ion-icon color="primary" mode="ios" slot="start" name="contact"></ion-icon>
+          <ion-text>Profile</ion-text>
         </ion-item>
       </ion-menu-toggle>
     </ion-list>

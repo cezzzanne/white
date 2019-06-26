@@ -1,12 +1,25 @@
-<ion-header mode="ios">
-  <ion-toolbar mode="ios">
-    <ion-buttons mode="ios" slot="start">
-      <ion-menu-button mode="ios"></ion-menu-button>
+<ion-header no-border mode="ios">
+  <ion-toolbar mode="ios" transparent>
+    <ion-buttons [class.currentDisplayed]="notChoosing" mode="ios" slot="start">
+      <ion-menu-button mode="ios">
+      </ion-menu-button>
     </ion-buttons>
-    <ion-title mode="ios">Home</ion-title>
+    <ion-searchbar [class.currentDisplayed]="notChoosing" animated="true" color="light" mode="ios" placeholder="Search Groups"></ion-searchbar>
+    <ion-buttons [class.currentDisplayed]="notChoosing" (click)="addGroup()" slot="end">
+      <ion-icon mode="md" slot="icon-only" color="primary" name="radio-button-on"></ion-icon>
+    </ion-buttons>
+    <ion-buttons [class.currentDisplayed]="choosing" (click)="closeAddGroup()" slot="start">
+      <ion-icon mode="md" slot="icon-only" color="danger" name="close-circle-outline"></ion-icon>
+    </ion-buttons>
+    <ion-buttons [class.currentDisplayed]="choosing" (click)="saveGroup()" slot="end">
+      <ion-icon mode="md" slot="icon-only" color="primary" name="bookmark"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h1>Home Page</h1>
+<ion-content fullscreen>
+
+  <div id="map"></div>
+
+
 </ion-content>
