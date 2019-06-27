@@ -1,0 +1,18 @@
+<ion-header no-border mode="ios">
+  <ion-toolbar mode="ios" transparent>
+    <ion-buttons slot="start">
+      <ion-icon mode="ios" color="primary" slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-buttons>
+    <ion-buttons (click)="goBack()" slot="start">
+      <ion-icon color="primary" slot="icon-only" mode="md" name="globe"></ion-icon>
+    </ion-buttons>
+    <ion-title mode="ios"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="margin-top: 2vh;">
+    <h5 text-center>{{ name }}</h5>
+  </div>
+
+</ion-content>
